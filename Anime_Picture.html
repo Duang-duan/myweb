@@ -15,15 +15,60 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    }
+body{
+    background: linear-gradient(90deg,#ecf0f1,#bdc3c7);
+}
+.con{
+    position: absolute;
+    margin-top:100px;
+}
+.anime{
+    display: block;
+}
+.movie{
+    display: none;
+}
+.civilize{
+    display: none;
+}
+.scenery{
+    display: none;
 }
 .navigater{
-    height: 720px;
+    height: 80px;
     width: 100%;
+}
+.divide{
+    width: 1200px;
+    height: 100px;
+    margin: 15px auto;
+}
+.divide ul li{
+    float: left;
+    background-color: #3498db;
+    margin-left: 35px;
+    height: 70px;
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    cursor: pointer;
+    border: 5px solid white;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.divide ul li:hover{
+    transition: 0.5s;
+    opacity: 0.7;
+    background-color:white;
+    color:#3498db; 
 }
 .imgbutton{
     position: absolute;
     width: 100%;
-    height: 720px;
+    height: 750px;
     z-index: -999;
     filter: blur(1px);
     transition: 1s;
@@ -63,21 +108,20 @@
     margin-left: 30%;
 }
 .imgboxtop{
-    width: 1300px;
-    height: 650px;
+    width: 1500px;
+    height: 700px;
     margin:20px auto;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 100px black;
 }
 .imgtop{
-    width: 1100px;
-    height: 650px;
-    
+    width: 1200px;
+    height: 680px;
+    box-shadow: 0 0 70px black; 
 }
 #imglist{
     list-style: none;
-    width: 5219px;
+    width: 6000px;
     height: 650px;
     position: absolute;
     cursor:pointer;
@@ -87,7 +131,7 @@
     float:left;
 }
 .it{
-    margin-left: 273px;
+    margin-left: 300px;
 }
 .imgbox{
     height: 1000px;
@@ -110,18 +154,28 @@
 </style>
 <body id="body">
     <div class="navigater" id="navigater">
-        <div class="imgboxbutton">
-            <img id="imgbutton" class="imgbutton" src="img1.png" alt="">
-        </div>
         <span>壁纸·图库</span>
         <input type="text" placeholder="输入想要的图片吧">
         <button>搜索</button>
-        <a href="C:\Users\DELL\Desktop\暑假作业\login.html">
         <span class="register">登陆</span>
         <span>丨</span>
         <span>注册</span>
-        </a>
+        <div class="divide">
+            <ul>
+                <li id="anime">动漫</li>
+                <li id="scenery">风景</li>
+                <li id="civilize">人文</li>
+                <li id="movie">影视</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+    <div class="con anime" id="anime_content">
         <div class="imgboxtop">
+                <div class="imgboxbutton">
+                        <img id="imgbutton" class="imgbutton" src="img1.png" alt="">
+                    </div>
         <ul id="imglist">
             <li><img class="imgtop" src="http://chuantu.xyz/t6/702/1567401616x2890186076.png" alt=""></li>
             <li><img class="it imgtop" src="http://chuantu.xyz/t6/702/1567401658x2890186076.png" alt=""></li>
@@ -129,7 +183,6 @@
             <li><img class="it imgtop" src="http://chuantu.xyz/t6/702/1567401695x2890186076.png" alt=""></li>
             </ul>
         </div>
-    </div>
 
     <div class="imgbox">
 
@@ -169,7 +222,134 @@
                         <img src="http://chuantu.xyz/t6/702/1567401878x992245975.jpg" class="imgl" alt="">
                 </a>
     </div>
+</div>
 
+    <div class="con scenery" id="scenery_content">
+            
+    
+        <div class="imgbox">
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987354&di=e0f07d54aff049d798cf31e7efa4e3c7&imgtype=0&src=http%3A%2F%2Fattachments.gfan.net.cn%2Fforum%2F201605%2F06%2F001212zre9x99pshbee2bh.jpg" class="imgc">
+                        <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987354&di=e0f07d54aff049d798cf31e7efa4e3c7&imgtype=0&src=http%3A%2F%2Fattachments.gfan.net.cn%2Fforum%2F201605%2F06%2F001212zre9x99pshbee2bh.jpg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987354&di=7e4a19da307edcfcc62b16b37e3b98c3&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2017-12-26%2F5a41b822cdf4e.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987354&di=7e4a19da307edcfcc62b16b37e3b98c3&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2017-12-26%2F5a41b822cdf4e.jpg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987353&di=9b15c74609a78513cb7cac50bbf42f6f&imgtype=0&src=http%3A%2F%2Fimg3.xiazaizhijia.com%2Fwalls%2F20150728%2F1440x900_5f269cbe517b2ec.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987353&di=9b15c74609a78513cb7cac50bbf42f6f&imgtype=0&src=http%3A%2F%2Fimg3.xiazaizhijia.com%2Fwalls%2F20150728%2F1440x900_5f269cbe517b2ec.jpg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987352&di=f9a8f61f0dc6030700f17653ef4719a8&imgtype=0&src=http%3A%2F%2Fimg2.ph.126.net%2FtLgetHHzO_g1xKvcUGHwVA%3D%3D%2F6619396449771045263.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987352&di=f9a8f61f0dc6030700f17653ef4719a8&imgtype=0&src=http%3A%2F%2Fimg2.ph.126.net%2FtLgetHHzO_g1xKvcUGHwVA%3D%3D%2F6619396449771045263.jpg" class="imgl" alt="">
+                        </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987350&di=3e57b6ac5d039ecda8b4465b47678d67&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201304%2F25%2F195038zl3l55ok3gjkkfpt.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987350&di=3e57b6ac5d039ecda8b4465b47678d67&imgtype=0&src=http%3A%2F%2Fattach.bbs.miui.com%2Fforum%2F201304%2F25%2F195038zl3l55ok3gjkkfpt.jpg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987350&di=4cfd9537fb5e3196b1d04ccc6e6126b0&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201504%2F17%2F062117b34evrhlley3929i.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987350&di=4cfd9537fb5e3196b1d04ccc6e6126b0&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2F201504%2F17%2F062117b34evrhlley3929i.jpg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987346&di=95baf8f4bc253343de0279b07f9fda9f&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201511%2F08%2F20151108145708_MHBAL.jpeg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987346&di=95baf8f4bc253343de0279b07f9fda9f&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fblog%2F201511%2F08%2F20151108145708_MHBAL.jpeg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987345&di=37e8b5148f5909763154a6bb8ba168d6&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F574420055d0b9.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567418987345&di=37e8b5148f5909763154a6bb8ba168d6&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2Fc%2F574420055d0b9.jpg" class="imgl" alt="">
+                    </a>
+    
+                    <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419152192&di=d5d4ef81bd1812c030f8c8f987b551ca&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F5%2F544de99df0fcc.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419152192&di=d5d4ef81bd1812c030f8c8f987b551ca&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F5%2F544de99df0fcc.jpg" class="imgl" alt="">
+                    </a>
+        </div>
+    </div>
+        <div class="con civilize" id="civilize_content">
+                
+        
+            <div class="imgbox">
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419312024&di=aad61af2b4ca62b1ecda0c570e5bb20a&imgtype=0&src=http%3A%2F%2Fwww.bbra.cn%2FUploadfiles%2Fimgs%2F2014%2F06%2F19%2Fjian1%2FXbzs_012.jpg" class="imgc">
+                            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419312024&di=aad61af2b4ca62b1ecda0c570e5bb20a&imgtype=0&src=http%3A%2F%2Fwww.bbra.cn%2FUploadfiles%2Fimgs%2F2014%2F06%2F19%2Fjian1%2FXbzs_012.jpg" class="imgl" alt="">
+                        </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419312024&di=6a5d5c12ba02b60452be31bb4a5e5e3f&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2F201407%2F13%2F0918240n8oeint0zo9ownx.jpg" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419312024&di=6a5d5c12ba02b60452be31bb4a5e5e3f&imgtype=0&src=http%3A%2F%2Fattachments.gfan.com%2Fforum%2Fattachments2%2F201407%2F13%2F0918240n8oeint0zo9ownx.jpg" class="imgl" alt="">
+                        </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419312017&di=bfeb205029cfeb900d399671aaffe406&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-03-20%2F5ab0ac56cc5c7.jpg" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419312017&di=bfeb205029cfeb900d399671aaffe406&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F2018-03-20%2F5ab0ac56cc5c7.jpg" class="imgl" alt="">
+                        </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419427144&di=973f916d799d8d599169c1eea9d92a67&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D3741657629%2C1428664233%26fm%3D214%26gp%3D0.jpg" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419427144&di=973f916d799d8d599169c1eea9d92a67&imgtype=jpg&src=http%3A%2F%2Fimg4.imgtn.bdimg.com%2Fit%2Fu%3D3741657629%2C1428664233%26fm%3D214%26gp%3D0.jpg" class="imgl" alt="">
+                            </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419457212&di=861037567c5605e9ba5bd8563c5a6fbf&imgtype=jpg&src=http%3A%2F%2Fwww.bbra.cn%2Fuploadfiles%2Fimgs%2F2014%2F03%2F11%2Ffeng2%2Fxbzs_015.jpg" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419457212&di=861037567c5605e9ba5bd8563c5a6fbf&imgtype=jpg&src=http%3A%2F%2Fwww.bbra.cn%2Fuploadfiles%2Fimgs%2F2014%2F03%2F11%2Ffeng2%2Fxbzs_015.jpg" class="imgl" alt="">
+                        </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419524013&di=709eca915af3b4005ef71169f9ec9cb2&imgtype=jpg&src=http%3A%2F%2Fstatic.joytrav.com%2Fimages%2F1391995518279343804161674214969.jpg%3Fnc" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419524013&di=709eca915af3b4005ef71169f9ec9cb2&imgtype=jpg&src=http%3A%2F%2Fstatic.joytrav.com%2Fimages%2F1391995518279343804161674214969.jpg%3Fnc" class="imgl" alt="">
+                        </a>
+        
+                        <a href="http://chuantu.xyz/t6/702/1567401840x992245926.jpg" class="imgc">
+                                <img src="http://chuantu.xyz/t6/702/1567401840x992245926.jpg" class="imgl" alt="">
+                        </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419555972&di=c0275fb8697c255af32db63d4666c254&imgtype=jpg&src=http%3A%2F%2Fwww.bbra.cn%2Fuploadfiles%2Fimgs%2F2013%2F11%2F26%2Fjian2%2Fxbzs_017.jpg" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419555972&di=c0275fb8697c255af32db63d4666c254&imgtype=jpg&src=http%3A%2F%2Fwww.bbra.cn%2Fuploadfiles%2Fimgs%2F2013%2F11%2F26%2Fjian2%2Fxbzs_017.jpg" class="imgl" alt="">
+                        </a>
+        
+                        <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419508239&di=0deeb57be190f76ead6ec274f142bd7f&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1505%2F16%2Fc2%2F6842161_6842161_1431741598873.jpg" class="imgc">
+                                <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567419508239&di=0deeb57be190f76ead6ec274f142bd7f&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fphotoblog%2F1505%2F16%2Fc2%2F6842161_6842161_1431741598873.jpg" class="imgl" alt="">
+                        </a>
+            </div>
+        </div>
+            <div class="con movie" id="movie_content">
+                    
+            
+                <div class="imgbox">
+            
+                            <a href="http://hbimg.b0.upaiyun.com/cf99b2fd66e18d8d09b70151affe433eac5cab30cc0a4-JLIeQV_fw658" class="imgc">
+                                <img src="http://hbimg.b0.upaiyun.com/cf99b2fd66e18d8d09b70151affe433eac5cab30cc0a4-JLIeQV_fw658" class="imgl" alt="">
+                            </a>
+            
+                            <a href="http://i0.hdslb.com/bfs/article/ad9ec2f4e778f58ab6a208f98e01a7eadeb193fe.jpg" class="imgc">
+                                    <img src="http://i0.hdslb.com/bfs/article/ad9ec2f4e778f58ab6a208f98e01a7eadeb193fe.jpg" class="imgl" alt="">
+                            </a>
+            
+                            <a href="http://b-ssl.duitang.com/uploads/blog/201512/02/20151202125526_Td3Lu.jpeg" class="imgc">
+                                    <img src="http://b-ssl.duitang.com/uploads/blog/201512/02/20151202125526_Td3Lu.jpeg" class="imgl" alt="">
+                            </a>
+            
+                            <a href="http://www.dnzhuti.com/uploads/allimg/171013/95-1G0131FG9.jpg" class="imgc">
+                                    <img src="http://www.dnzhuti.com/uploads/allimg/171013/95-1G0131FG9.jpg" class="imgl" alt="">
+                                </a>
+            
+                            <a href="http://pic1.win4000.com/wallpaper/2018-09-27/5bac3aa239387.jpg" class="imgc">
+                                    <img src="http://pic1.win4000.com/wallpaper/2018-09-27/5bac3aa239387.jpg" class="imgl" alt="">
+                            </a>
+            
+                            <a href="http://pic1.win4000.com/wallpaper/4/5670d9ba2f382.jpg" class="imgc">
+                                    <img src="http://pic1.win4000.com/wallpaper/4/5670d9ba2f382.jpg" class="imgl" alt="">
+                            </a>
+            
+                            <a href="http://b-ssl.duitang.com/uploads/item/201609/20/20160920203928_YjPEX.jpeg" class="imgc">
+                                    <img src="http://b-ssl.duitang.com/uploads/item/201609/20/20160920203928_YjPEX.jpeg" class="imgl" alt="">
+                            </a>
+            
+                            <a href="http://image13.m1905.cn/uploadfile/2016/0406/20160406100050500.jpg" class="imgc">
+                                    <img src="http://image13.m1905.cn/uploadfile/2016/0406/20160406100050500.jpg" class="imgl" alt="">
+                            </a>
+            
+                            <a href="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567420640902&di=f2f29d11fb5af2a7b58cba3045dbe3a6&imgtype=0&src=http%3A%2F%2Fdianying.fm%2Fmedia%2Fbackdrops%2F6L%2F6LnwpadKFRrqam7IfBAi3lNTz6Y.jpg" class="imgc">
+                                    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1567420640902&di=f2f29d11fb5af2a7b58cba3045dbe3a6&imgtype=0&src=http%3A%2F%2Fdianying.fm%2Fmedia%2Fbackdrops%2F6L%2F6LnwpadKFRrqam7IfBAi3lNTz6Y.jpg" class="imgl" alt="">
+                            </a>
+                </div>
+        </div>
     <script>
         $(".imgbox").magnificPopup({
             delegate:'a',
@@ -179,7 +359,7 @@
             }
         })
 
-        var imgbutton=document.getElementById("imgbutton");
+    var imgbutton=document.getElementById("imgbutton");
     var imglist=document.getElementById("imglist");
     var index=0;
     imglist.onclick=function(e){
@@ -190,10 +370,10 @@
             index++;
         }
         if(index==1){
-            imglist.style.left=index*(-1373)+"px";
+            imglist.style.left=index*(-1500)+"px";
         }
         else{
-            imglist.style.left=index*(-1373)+"px";
+            imglist.style.left=index*(-1500)+"px";
         }
         if(index==0){
             imgbutton.src="http://chuantu.xyz/t6/702/1567401616x2890186076.png";
@@ -207,6 +387,47 @@
         else{
             imgbutton.src="http://chuantu.xyz/t6/702/1567401695x2890186076.png";
         }
+    }
+    var ani=document.getElementById("anime");
+    var sec=document.getElementById("scenery");
+    var civ=document.getElementById("civilize");
+    var mov=document.getElementById("movie");
+
+    var ani_cont=document.getElementById("anime_content");
+    var sec_cont=document.getElementById("scenery_content");
+    var civ_cont=document.getElementById("civilize_content");
+    var mov_cont=document.getElementById("movie_content");
+    var bd=document.getElementById("body");
+    ani.onclick=function(){
+        ani_cont.style.display="block";
+        sec_cont.style.display="none";
+        civ_cont.style.display="none";
+        mov_cont.style.display="none";
+        bd.style.background="linear-gradient(45deg,#ecf0f1,#bdc3c7)";
+    }
+
+    sec.onclick=function(){
+        ani_cont.style.display="none";
+        sec_cont.style.display="block";
+        civ_cont.style.display="none";
+        mov_cont.style.display="none";
+        bd.style.background="linear-gradient(45deg,#3498db,#2ecc71)";
+    }
+
+    civ.onclick=function(){
+        ani_cont.style.display="none";
+        sec_cont.style.display="none";
+        civ_cont.style.display="block";
+        mov_cont.style.display="none";
+        bd.style.background="linear-gradient(45deg,#e74c3c,#e67e22)";
+    }
+
+    mov.onclick=function(){
+        ani_cont.style.display="none";
+        sec_cont.style.display="none";
+        civ_cont.style.display="none";
+        mov_cont.style.display="block";
+        bd.style.background="linear-gradient(45deg,#9b59b6,#f39c12)";
     }
     </script>
 </body>
